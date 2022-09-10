@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0; 
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+:root {
+  --clr-red: #b56357;
+  --clr-green-mint: #B4DBC0;
+  --clr-slate: #EAE3EA;
+  --clr-sea-foam: #A7B3A5;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr;
+  background-color: #e0f2fe;
+}
+
+
+
+/* header */
+.header {
+  background: var(--clr-green-mint);
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-rows: auto auto;
+  padding: 5px 30px;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 12px;
+  margin-right: 100px;
+  flex: 1;
+}
+
+.avatar {
+  height: 54px;
+  border-radius: 100%;
+}
+.big-avatar{
+  height: 75px;
+  border-radius: 100%;
+}
+
+.header-top {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-bottom-left {
+  display: flex;
+  gap: 15px;
+}
+
+.bottom-left-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: var(--clr-red);
+  border: none;
+  border-radius: 99em;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  width: 150px;
+}
+.header-bottom-right{
+  display: flex;
+  gap: 25px;
+}
+
+/* sidebar */
+
+.sidebar {
+  background: var(--clr-red);
+  grid-row: 1 / -1;
+  padding: 30px;
+  padding-left: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar-items{
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+.sidebar a {
+  color: inherit;
+  text-decoration: none;
+  align-self: center;
+  font-weight: bold;
+}
+
+.settings {
+  margin-top: 80px;
+}
+
+.dashboard {
+  margin-bottom: 30px;
+  font-size: x-large;
+  font-weight: 800;
+}
+.dashboard img {
+  height: 66px;
+}
+
+/* main-content  */
+
+.main-content {
+  background: var(--clr-slate);
+  grid-column: 2 / -1;
+}
+
